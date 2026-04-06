@@ -1,0 +1,32 @@
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.mobile-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #666;
+}
+
+.mobile-nav .nav-item.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.role-toggle {
+  border: none;
+  font-size: 12px;
+  background: transparent;
+}

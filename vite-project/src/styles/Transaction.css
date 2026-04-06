@@ -1,0 +1,241 @@
+/* =========================
+   🌗 THEME VARIABLES
+========================= */
+
+
+.table tbody tr {
+  background: #1e293b !important;
+}
+
+
+.table tbody tr {
+  background: var(--row) !important;
+}
+
+.table td,
+.table th {
+  color: var(--text) !important;
+}
+.dark-mode .table tbody tr {
+  background: #1e293b !important;
+}
+
+
+
+.dark-mode .table tbody tr:hover {
+  background: #273449 !important;
+}
+.amount-income {
+  color: #22c55e;
+}
+.amount-expense {
+  color: #f87171;
+}
+
+.badge-expense {
+  background: rgba(248, 113, 113, 0.15);
+  color: #f87171;
+}
+
+.badge-income {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --secondary: #64748b;
+  --border: #e2e8f0;
+  --primary: #6366f1;
+}
+
+.dark-mode {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f1f5f9;
+  --secondary: #94a3b8;
+  --border: #334155;
+  --primary: #818cf8;
+}
+
+/* =========================
+   🌍 GLOBAL
+========================= */
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   📦 CARD
+========================= */
+.card {
+  background: var(--card) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--border) !important;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* =========================
+   🔍 INPUTS (FIXED)
+========================= */
+.form-control,
+.form-select {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2) !important;
+}
+
+/* =========================
+   📊 TABLE FIX (IMPORTANT)
+========================= */
+.table {
+  background: transparent !important;
+  border-collapse: separate !important;
+  border-spacing: 0 8px !important;
+}
+
+/* REMOVE BOOTSTRAP STYLES */
+.table > :not(caption) > * > * {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+/* HEADER */
+.table thead th {
+  color: var(--secondary) !important;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 16px !important;
+}
+
+/* ROWS */
+.table tbody tr {
+  background: var(--card) !important;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* DARK MODE ROW FIX */
+.dark-mode .table tbody tr {
+  background: #1e293b !important;
+}
+
+/* HOVER */
+.table tbody tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* CELLS */
+.table td {
+  padding: 16px !important;
+  border: none !important;
+  vertical-align: middle;
+}
+
+/* ROUND CORNERS */
+.table tbody tr td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.table tbody tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* =========================
+   💰 AMOUNT COLORS
+========================= */
+.amount-income {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.amount-expense {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* =========================
+   🏷️ BADGES
+========================= */
+.badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-income {
+  background: rgba(34,197,94,0.15);
+  color: #22c55e;
+}
+
+.badge-expense {
+  background: rgba(239,68,68,0.15);
+  color: #ef4444;
+}
+
+/* =========================
+   🔘 BUTTONS
+========================= */
+.btn-warning {
+  background: #facc15 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 500;
+}
+
+.btn-warning:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background: var(--primary) !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+/* =========================
+   📦 MODAL
+========================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: var(--card);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 16px;
+  width: 320px;
+}
+
+/* =========================
+   ✨ TITLE
+========================= */
+h2 {
+  font-weight: 600;
+}

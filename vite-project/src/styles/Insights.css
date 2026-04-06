@@ -1,0 +1,62 @@
+body {
+  background: #f5f6fa;
+}
+
+/* Base card */
+.premium-card {
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  border: none;
+  background: #ffffff;   /* white cards */
+  color: #333;           /* dark text for readability */
+}
+
+.premium-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Gradient Cards (ONLY these have white text) */
+.income-card {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+}
+
+.expense-card {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+.savings-card {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: #fff;
+}
+
+.category-card {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: #fff;
+}
+
+/* Progress Bars */
+.premium-progress {
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.small-progress {
+  height: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Optional: better text look */
+.premium-card h6 {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.premium-card h3,
+.premium-card h4 {
+  font-weight: 700;
+}
